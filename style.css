@@ -35,3 +35,8 @@ a:hover {
 .hide {
 	display: none;
 }
+
+#question {
+	display: grid;
+	font-size: 20px;
+}
