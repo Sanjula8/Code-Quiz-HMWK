@@ -3,6 +3,7 @@
 var startButton = document.getElementById("start-quiz");
 var nextButton = document.getElementById("next-btn");
 var questionContainerEl = document.getElementById("question-container");
+var QuestionDisplay = document.getElementById("question-title");
 var questionEl = document.getElementById("question");
 var answerButtonsEl = document.getElementById("answer-buttons");
 var answer1 = document.getElementById("answer1");
@@ -16,7 +17,7 @@ let userScore;
 // Create Questions:
 var questions = [
 	{
-		question1: "What is Javascript?",
+		QuestionDisplay: "What is Javascript?",
 		answers: [
 			{ AnswerA: "Correct", correct: true },
 			{ AnswerB: "Wrong", correct: false },
@@ -43,7 +44,7 @@ var questions = [
 		]
 	},
 	{
-		question4: "What is my name?",
+		question4: "What is that thing right here?",
 		answers: [
 			{ AnswerA: "Correct", correct: true },
 			{ AnswerB: "Wrong", correct: false },
@@ -53,7 +54,7 @@ var questions = [
 	}
 ];
 
-// Start Quiz
+// Start Quiz 
 startButton.addEventListener("click", startQuiz);
 nextButton.addEventListener("click", () => {
 	currentQuestionIndex++;
@@ -68,9 +69,11 @@ function startQuiz() {
 	setNextQuestion();
 }
 
-function setNextQuestion() {
-	showQuestion(questions[currentQuestionIndex]);
-}
+// Starting Quiz will also start counter
+
+
+
+// Hitting start will display next Question and Answer buttons:
 
 function showQuestion() {
 	answer1.innerHTML = questions[0].answers[0].AnswerA;
@@ -79,8 +82,41 @@ function showQuestion() {
 	answer4.innerHTML = questions[0].answers[3].AnswerD;
 }
 
-answerButtonsEl.addEventListener("click", answer);
+// Show Question too!
 
-var lastQuestion = questions.length - 1;
+// Selecting correct answer will move to next question and display "correct"
+// Selecting correct answer will count towards user score
 
-// Event = on click
+function setNextQuestion() {
+	showQuestion(questions[currentQuestionIndex]);
+}
+
+answerButtonsEl.addEventListener("click", SelectAnswer);
+
+function selectAnswer() {
+    if (answerButtonsEl === true) {
+    // This thing will happen
+
+    };
+
+} else (answerButtonsEl === false) {
+// This other thing will happen
+
+};
+
+
+// Selecting wrong answer will display "Incorrect/Wrong" and continue to next question
+// Selecting wrong answer will not count towards user score
+// Selecting wrong answer will subtract 15 seconds to user score
+
+
+// After finishing all answers, user will be redirected to Submit Score Page
+// At last question, will redirect to submit score page
+// var lastQuestion = questions.length - 1;
+
+
+
+// User is able to save the score in local storage and able to display High Scores
+
+
+
