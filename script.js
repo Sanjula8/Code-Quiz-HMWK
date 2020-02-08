@@ -21,48 +21,68 @@ var timerID;
 // Create Questions:
 var questions = [
 	{
-		question: "What is Javascript?",
+		question: "How heavy is the adult brain?",
 		answers: [
-			{ answer: "Correct", correct: true },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false }
+			{ answer: "Three Pounds", correct: true },
+			{ answer: "Four Pounds", correct: false },
+			{ answer: "One Pound", correct: false },
+			{ answer: "3 1/2 Pounds", correct: false }
 		]
 	},
 	{
-		question: "What is this other thing?",
+		question: "How many nerve cells are in the human brain?",
 		answers: [
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Correct", correct: true },
-			{ answer: "Wrong", correct: false }
+			{ answer: "1 Billion", correct: false },
+			{ answer: "10 Billion", correct: false },
+			{ answer: "100 Billion", correct: true },
+			{ answer: "100 Million", correct: false }
 		]
 	},
 	{
-		question: "What is that thing over there?",
+		question: "What is the resting potential of a neuron?",
 		answers: [
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Correct", correct: true }
+			{ answer: "0 mV", correct: false },
+			{ answer: "70 mV", correct: false },
+			{ answer: "-60 mV", correct: false },
+			{ answer: "-70 mV", correct: true }
 		]
 	},
 	{
-		question: "What is that thing right here?",
+		question: "The birth and development of new neural tissue is:",
 		answers: [
-			{ answer: "Correct", correct: true },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false }
+			{ answer: "Neurogenesis", correct: true },
+			{ answer: "Pruning", correct: false },
+			{ answer: "Plasticity", correct: false },
+			{ answer: "Hypertrophy", correct: false }
 		]
 	},
 	{
-		question: "dfdfdght here?",
+		question:
+			"Which lobe of the brain is responsible for our ability to see?",
 		answers: [
-			{ answer: "Correct", correct: true },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false },
-			{ answer: "Wrong", correct: false }
+			{ answer: "Occipital Lobe", correct: true },
+			{ answer: "Parietal Lobe", correct: false },
+			{ answer: "Temporal Lobe", correct: false },
+			{ answer: "Frontal Lobe", correct: false }
+		]
+	},
+	{
+		question: "A cerebral vascular accident is also known as:",
+		answers: [
+			{ answer: "Hemorrhage", correct: false },
+			{ answer: "Aneurysm", correct: false },
+			{ answer: "Meningioma", correct: false },
+			{ answer: "Stroke", correct: true }
+		]
+	},
+	{
+		question:
+			"Which of the following is not considered part of the limbic system?",
+		answers: [
+			{ answer: "Amygdala", correct: false },
+			{ answer: "Globus pallidus", correct: true },
+			{ answer: "Hippocampus", correct: false },
+			{ answer: "Cingulate gyrus", correct: false }
 		]
 	}
 ];

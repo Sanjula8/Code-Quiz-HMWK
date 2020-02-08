@@ -1,3 +1,7 @@
+body {
+	background-color: lightgoldenrodyellow;
+}
+
 .btn {
 	background-color: rgb(46, 151, 186);
 	border: none;
@@ -39,4 +43,9 @@ a:hover {
 #question {
 	display: grid;
 	font-size: 20px;
+}
+
+#initials {
+	padding: 10px;
+	margin-right: 10px;
 }
